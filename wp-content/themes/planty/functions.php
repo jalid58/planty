@@ -31,7 +31,7 @@ function masquer_element_admin_non_connecte($items, $args)
 {
     if ($args->theme_location == 'primary' || $args->theme_location == 'mobile_menu') {
         if (is_user_logged_in()) {
-            $items .= '<li class="bouton_admin"><a class="menu-link" href="' . admin_url() . '">Admin</a></li>';
+            $items .= '<li class="bouton_admin menu-item"><a class="menu-link" href="' . admin_url() . '">Admin</a></li>';
         }
     }
     return $items;

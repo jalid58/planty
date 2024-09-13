@@ -11,18 +11,6 @@ Updated: 2024-06-12 12:41:06
 
 */
 
-/*
-Nom du thème : Astra Child
-URI du thème : https://wpastra.com/
-Modèle : astra
-Auteur : Brainstorm Force
-URI de l'auteur : https://wpastra.com/about/?utm_source=theme_preview&utm_medium=author_link&utm_campaign=astra_theme
-Description : Astra est un thème WordPress rapide, entièrement personnalisable et magnifique, adapté aux blogs, aux portfolios personnels, aux sites Web d'entreprise et aux vitrines WooCommerce. Il est très léger (moins de 50 Ko sur le frontend) et offre une vitesse inégalée. Conçu pour le référencement, Astra est livré avec le code Schema.org intégré et est prêt pour Native AMP, de sorte que les moteurs de recherche adoreront votre site. Il offre des fonctionnalités et des modèles spéciaux pour fonctionner parfaitement avec tous les créateurs de pages comme Elementor, Beaver Builder, Visual Composer, SiteOrigin, Divi, etc. Certaines des autres fonctionnalités : # WooCommerce Ready # Responsive # RTL &amp; Traduction prête # Extensible avec des modules complémentaires premium # Régulièrement mis à jour # Conçu, développé, maintenu et soutenu par Brainstorm Force. Vous recherchez un thème de base parfait ? Ne cherchez pas plus loin. Astra est un thème rapide, entièrement personnalisable et compatible WooCommerce que vous pouvez utiliser pour créer tout type de site Web !
-Tags : menu personnalisé, logo personnalisé, divertissement, une colonne, deux colonnes, barre latérale gauche, commerce électronique, barre latérale droite, couleurs personnalisées, style de l'éditeur, images en vedette, modèle pleine largeur, microformats, formats de publication, support linguistique rtl, options de thème, commentaires en fil de discussion, prêt pour la traduction, blog
-Version : 4.7.0.1718188866
-Mise à jour : 2024-06-12 12:41:06
-*/
-
 main {
 
 	background-color: #ece2da !important;
@@ -51,11 +39,11 @@ main {
 }
 
 a {
-	color: black;
+	color: black !important;
 }
 
 a:hover {
-	color: black;
+	color: black !important;
 	font-weight: 700;
 }
 
@@ -102,7 +90,7 @@ a:hover {
 
 .branche_nous_rencontrer {
 	position: relative;
-	top: 40px;
+	top: 37px;
 	z-index: 1;
 }
 
@@ -141,12 +129,6 @@ a:hover {
 	cursor: pointer !important;
 }
 
-/*
-.contact-nous-rencontrer {
-	min-width: 100% !important;
-}
-
-*/
 /*paragraphe commander*/
 
 .votre_commande {
@@ -156,7 +138,6 @@ a:hover {
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
-
 
 /* formulaire commander */
 
@@ -178,8 +159,6 @@ a:hover {
 }
 
 /*couleur des labels */
-
-
 
 .blanc {
 	color: white !important;
@@ -241,23 +220,7 @@ input.wpcf7-text {
 	background: #3b8e46 !important;
 }
 
-.fraise {
-	background-image: url(http://localhost/planty/wp-content/uploads/2024/06/jeremy-bezanger-0QgbyZdhX7k-unsplash-1-8.png);
-}
-
-
-.pamplemousse {
-	background-image: url(http://localhost/planty/wp-content/uploads/2024/06/estudio-bloom-tOitjphtIXU-unsplash-1-4.png);
-}
-
-.framboise {
-	background-image: url(http://localhost/planty/wp-content/uploads/2024/06/rodion-kutsaev-4k8xEFW4_3Q-unsplash-1-3.png);
-}
-
-.citron {
-	background-image: url(http://localhost/planty/wp-content/uploads/2024/06/estudio-bloom-ezqnxsqUZ80-unsplash-1-4.png);
-}
-
+/* formulaire commander */
 .image-box {
 	display: flex;
 	justify-content: space-between;
@@ -294,9 +257,12 @@ input.wpcf7-text {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 39px !important;
+	width: 45px !important;
 	height: 56px !important;
 	margin: auto !important;
+	padding: 0px !important;
+	text-align: center;
+	font-family: "syne";
 }
 
 .contact-commander h2 {
@@ -319,9 +285,10 @@ input.wpcf7-text {
 		color: black;
 	}
 
+
+
 	.image-box {
 		display: flex;
-
 		justify-content: center;
 		flex-wrap: wrap;
 		row-gap: 10px;
@@ -356,21 +323,18 @@ input.wpcf7-text {
 		font-size: 24px;
 	}
 
-	/*
-	.contact {
-		width: 70%
-	}
-*/
 	.input_fraise,
 	.input_pamploumousse,
 	.input_framboise,
 	.input_citron {
-		width: 39px !important;
-		height: 56px !important;
-		margin: auto !important;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		width: 45px !important;
+		height: 56px !important;
+		margin: auto !important;
+		padding: 0px !important;
+		text-align: center;
 	}
 
 	.separateur_commander {
@@ -378,19 +342,24 @@ input.wpcf7-text {
 	}
 }
 
+@media screen and (max-width: 921px) {
+
+	.bouton_nous_rencontrer,
+	.bouton_commander {
+		height: inherit;
+	}
+}
+
 /*Media queries 767px */
 
 @media screen and (max-width: 767px) {
 
-	.bouton_nous_rencontrer {
-		height: 80px;
+	.bouton_nous_rencontrer,
+	.bouton_commander {
+		height: inherit;
 	}
 
-	.branche_nous_rencontrer {
-		position: relative;
-		top: 90px;
-		z-index: 1;
-	}
+
 
 	.bouton_nous_rencontrer:hover {
 		color: black;
@@ -410,17 +379,25 @@ input.wpcf7-text {
 		font-weight: 700;
 	}
 
+	.branche_nous_rencontrer {
+		position: relative;
+		top: 37px;
+		z-index: 1;
+	}
+
+
+	.label_form {
+		position: relative;
+		font-size: 20px;
+		color: rgb(0, 0, 0);
+		font-weight: 400;
+		top: 10px;
+	}
+
 	.titre_h1 {
 		font-size: 28px !important;
 	}
 
-	/*
-	.image-box {
-		display: flex;
-		justify-content: space-between;
-		max-width: 100%;
-	}
-*/
 	.image-box {
 		display: flex;
 		justify-content: center;
@@ -429,12 +406,10 @@ input.wpcf7-text {
 		column-gap: 10px;
 	}
 
-
-	/*
-	.contact {
-		width: 60%;
+	.quantite {
+		width: 45%;
+		max-width: 45%;
 	}
-*/
 
 	.contact-commander h2 {
 		font-size: 24px !important;
@@ -443,8 +418,12 @@ input.wpcf7-text {
 	.contact {
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-gap: 80px;
-		margin: 30px auto !important;
+		grid-gap: 30px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-right: 0px;
+		padding-left: 0px;
+		margin-top: 30px !important;
 		width: 100% !important;
 		min-width: 100%;
 		color: white;
@@ -464,6 +443,8 @@ input.wpcf7-text {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		text-align: center;
+		padding: 0px !important;
 
 	}
 
@@ -474,9 +455,9 @@ input.wpcf7-text {
 }
 
 
-/*Media queries 320px */
+/*Media queries 450px */
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 450px) {
 
 	.image-box {
 		display: flex;
@@ -491,14 +472,6 @@ input.wpcf7-text {
 		max-width: 100%;
 	}
 
-	/*
-	.image-box {
-		display: flex;
-		justify-content: center;
-		max-width: 100%;
-		width: 100%;
-	}
-*/
 	.bouton_nous_rencontrer:hover {
 		color: black;
 		font-weight: 700;
@@ -524,7 +497,11 @@ input.wpcf7-text {
 	.contact {
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-gap: 80px;
+		grid-gap: 30px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-right: 20px;
+		padding-left: 0px;
 		margin: 30px auto !important;
 		width: 100% !important;
 		min-width: 100%;
@@ -550,8 +527,9 @@ input.wpcf7-text {
 		font-weight: normal;
 		border-radius: 5px !important;
 		border: 0;
-		margin: 0em 25% 0 !important;
+		margin: 3em 25% 0 !important;
 	}
+
 
 	.titre_h1 {
 		font-size: 14px !important;
@@ -564,20 +542,6 @@ input.wpcf7-text {
 		top: 15px;
 	}
 
-	.branche_nous_rencontrer {
-		position: relative;
-		top: 90px;
-		z-index: 1;
-	}
-
-	.input_fraise,
-	.input_pamploumousse,
-	.input_framboise,
-	.input_citron {
-		width: 39px !important;
-		height: 56px !important;
-		margin: auto !important;
-	}
 
 	.fraise label,
 	.pamplemousse label,
@@ -587,6 +551,21 @@ input.wpcf7-text {
 		font-size: 20px;
 		font-weight: 800;
 		color: #ffffff;
+	}
+
+	.input_fraise,
+	.input_pamploumousse,
+	.input_framboise,
+	.input_citron {
+		width: 45px !important;
+		height: 56px !important;
+		margin: auto !important;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		padding: 0px !important;
+
 	}
 
 	.ligne_horiz {
