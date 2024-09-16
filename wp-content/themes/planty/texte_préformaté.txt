@@ -1,0 +1,56 @@
+#C02E44 rouge brique menu commander
+
+#DC9F96 rose menu hover
+
+#ece2da fond des pages
+
+#d2776a les goûts
+
+#3b8e46 titre boisson vert
+
+
+
+Planty, c'est la premièr boisson
+énergisante composée à 100 % de produits naturels.
+Avec son goût frais et fruité, retrouvez votre
+énergie grâce aux plantes riches en vitamine B2,
+à n'importe quel moment de la journée.
+
+
+FSE (Full Site Editing) : Une fonctionnalité qui permet de modifier l'ensemble de ton site WordPress, y compris l'en-tête, le pied de page, et les modèles de pages, directement depuis l'éditeur de blocs.
+
+Shortcode : Un petit code que tu peux insérer dans ton contenu pour ajouter des fonctionnalités avancées sans avoir à écrire de code.
+
+Slug : La partie de l'URL qui identifie de manière unique une page ou un article dans WordPress (la partie qu’on retrouve après le /)
+
+Back End : La zone d'administration de WordPress où tu peux gérer ton site, créer du contenu et configurer des paramètres.
+
+Front End : La partie de ton site visible par les visiteurs.
+
+Taxonomie : Un système de classification pour organiser le contenu, comme les catégories et les étiquettes.
+
+CPT (Custom Post Type) : Un type de contenu personnalisé que tu peux créer pour ton site, en plus des articles et des pages standard.
+Par exemple pour un site immobilier, un modèle de page dédié à la présentation des maisons.
+
+ACF (Advanced Custom Fields) : Des champs supplémentaires que tu peux ajouter à tes articles et pages pour stocker des informations personnalisées.
+Par exemple pour un site immobilier, le nombre de chambres et la surface.
+
+Cron Jobs : Des tâches automatisées que WordPress exécute à des intervalles de temps réguliers, comme la publication programmée d’articles.
+
+Responsive Design : Un design qui s’adapte aux différentes tailles d’écran.
+
+Thème Enfant : Un thème qui hérite des fonctionnalités et du style d'un autre thème (le thème parent), tout en permettant des modifications sans affecter le thème parent. 
+
+C’est utile dans le cas où tu modifies du code, pour éviter que la mise à jour du thème écrase tes modifications.
+
+API : Une API permet à différentes applications de communiquer entre elles. WordPress utilise des API pour intégrer des services externes.
+
+Sitemap : Un fichier XML listant toutes les pages d'un site web pour aider les moteurs de recherche à indexer le contenu.
+
+Base de données : Un système organisé pour stocker, gérer et récupérer des données. WordPress utilise MySQL ou MariaDB pour stocker toutes les informations du site.
+
+Fichiers WordPress : Les fichiers WordPress sont l'ensemble des fichiers et répertoires qui composent une installation WordPress.
+
+Ces fichiers incluent le noyau de WordPress, les thèmes, les plugins, ainsi que les fichiers de configuration et de contenu générés par l’utilisateur.
+
+Template : Un modèle de page ou de site que tu peux importer pour gagner du temps.
